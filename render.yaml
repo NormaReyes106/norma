@@ -1,9 +1,9 @@
-type: blueprint
-name: norma-blueprint
-plan: free
-
-dockerComposeFilePath: ./docker-compose.yml
-
-envVars:
-  - key: DB_URL
-    value: "postgresql://fullstack_api_b9nl_user:3xLJLJ4goNwKry63IQBjaoJ08iMUnGpZ@dpg-d0rv1vbe5dus739v3l10-a.oregon-postgres.render.com/fullstack_api_b9nl?ssl=true"
+services:
+  - type: web
+    name: norma-blueprint
+    env: docker
+    plan: free
+    dockerComposeFilePath: ./docker-compose.yml
+    envVars:
+      - key: DB_URL
+        value: "postgresql://fullstack_api_b9nl_user:3xLJLJ4goNwKry63IQBjaoJ08iMUnGpZ@dpg-d0rv1vbe5dus739v3l10-a.oregon-postgres.render.com/fullstack_api_b9nl?ssl=true"
