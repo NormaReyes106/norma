@@ -1,6 +1,5 @@
 services:
-  - type: web
-    name: norma-app
+  - name: norma-app
     env: docker
     repo: https://github.com/NormaReyes106/norma
     plan: free
