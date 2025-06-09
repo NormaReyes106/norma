@@ -1,0 +1,8 @@
+# Ignorar archivos innecesarios
+node_modules
+dist
+*.log
+
+# Ignora el archivo de entorno en builds remotos
+.env
+**/.env
