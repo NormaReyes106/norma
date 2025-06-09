@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: norma-app
+    env: docker
+    repo: https://github.com/NormaReyes106/norma
+    plan: free
+    dockerComposeFilePath: ./docker-compose.yml
+    envVars:
+      - key: DB_URL
+        value: postgresql://fullstack_api_b9nl_user:3xLJLJ4goNwKry63IQBjaoJ08iMUnGpZ@dpg-d0rv1vbe5dus739v3l10-a.oregon-postgres.render.com/fullstack_api_b9nl?ssl=true
