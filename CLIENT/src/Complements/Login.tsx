@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import '../index.css';
 
 
-const API_BASE_URL = "http://localhost:9090";
+const API_BASE_URL = "https://backend-gj8a.onrender.com"
+
 
 const Login = ({ onLogin }: { onLogin: () => void }) => {
   const [email, setEmail] = useState('');
